@@ -56,8 +56,8 @@ Add your service account JSON and update profiles.yml with:
 # Set Google Credentials
 Before running any dbt or dashboard command, set your service account JSON path:
 
-- Windows: setx GOOGLE_APPLICATION_CREDENTIALS "D:\attribution_project\ga4_dbt_project\attribution-demo-1234-671daf5e5996.json"
-- Mac/Linux: export GOOGLE_APPLICATION_CREDENTIALS= "D:\attribution_project\ga4_dbt_project\attribution-demo-1234-671daf5e5996.json"
+- Windows: setx GOOGLE_APPLICATION_CREDENTIALS "C:\path\to\your_key.json"
+- Mac/Linux: export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your_key.json"
 
 # Step 2: Run dbt Models
 dbt deps (Download dependencies)
