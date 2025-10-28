@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: First-click_attribution
+    description: >
+      "Calculates the first-touch channel attribution for user sessions,
+      assigning credit to the first marketing interaction in a conversion path."
+      
+  - name: Last-click_attribution
+    description: >
+      "Calculates last-touch channel attribution, giving full credit to the
+      last channel before a conversion event."

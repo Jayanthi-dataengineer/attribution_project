@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: int_sessions
+    description: >
+      "Intermediate model that aggregates session-level metrics
+      before attribution calculations."
