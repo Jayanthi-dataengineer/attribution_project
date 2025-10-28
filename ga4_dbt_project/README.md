@@ -59,6 +59,12 @@ Before running any dbt or dashboard command, set your service account JSON path:
 - Windows: setx GOOGLE_APPLICATION_CREDENTIALS "C:\path\to\your_key.json"
 - Mac/Linux: export GOOGLE_APPLICATION_CREDENTIALS="/path/to/your_key.json"
 
+# Note: If you get an error like "Invalid JWT Signature" or "Unable to generate access token", 
+
+- it means your service account key is expired or invalid.  
+- Go to Google Cloud Console → IAM & Admin → Service Accounts → your existing account →    Create a new key,  
+- download it, and update the path in your `profiles.yml` or environment variable.
+
 # Step 2: Run dbt Models
 dbt deps (Download dependencies)
 dbt run  (Build staging → intermediate → mart)
